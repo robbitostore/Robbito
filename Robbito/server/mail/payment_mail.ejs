@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Your Tailoring Payment with Robbito</title>
+  <style>
+    /* Reset styles */
+    body, h1, p {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Container */
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+    p{
+      color: #111;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    .header img {
+      max-width: 150px;
+    }
+
+    /* Body */
+    .body-content {
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    /* Button */
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #a56100;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 600px) {
+      .container {
+        width: 100%;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <!-- Body Content -->
+    <div class="body-content" >
+      <h1 style="text-align: center; color: #fff;  background: #af7500; padding: .5rem .6rem; border-radius: .6rem;">Complete Your Tailoring Payment with Robbito</h1>
+      <div class="header" style="margin-top: 1.5rem;">
+        <img src="https://res.cloudinary.com/dbdbfg1qw/image/upload/v1715341636/kpphkzxeiwwitgosayr1.jpg" alt="Robbito Logo" style="border-radius: 1rem; width: 6rem; height: 6rem;">
+      </div>
+      <p style="margin-top: 1rem;">Dear <%= user.name %>,</p>
+      <p style="margin-top: 1rem;">We hope this email finds you well and excited about your tailor-made outfit from Robbito!</p>
+      <p style="margin-top: 1rem;">We're thrilled to inform you that your order is ready for the final step: payment. To streamline the process, we've provided a secure payment link below for your convenience:</p>
+      <p style="text-align: center; margin-top: 1rem;"><a class="btn"  href="<%= user.link %>" style="color: #fff;"  >Complete Payment</a></p>
+      <p style="margin-top: 1rem;">Here's a breakdown of your payment:</p>
+      <ul style="margin-top: 1rem;">
+        <li style="color: #111;">Total Amount: <%= user.price %></li>
+        <li style="color: #111;">Payment Link: <%= user.link %></li>
+        <li style="color: #111;">Item Description: <%= user.description %></li>
+      </ul>
+      <p style="margin-top: 1rem;">Payment Instructions:</p>
+      <ol style="margin-top: 1rem; color: #111;">
+        <li style="color: #111;">Click on the provided payment link.</li>
+        <li style="color: #111;">Enter your payment details securely.</li>
+        <li style="color: #111;">Review and confirm your payment.</li>
+      </ol>
+      <p style="margin-top: 1rem;">Once your payment is confirmed, we'll swiftly proceed to finalize your order and prepare it for delivery.</p>
+      <p style="margin-top: 1rem;">Should you have any questions or need assistance, our dedicated customer service team is here to help. Feel free to reach out via email at <b style="font-weight: 600; color: #111;">robbitostore@gmail.com</b>  or call us at <b style="font-weight: 600; color: #111;">+92 316 7272599</b>.</p>
+      <p style="margin-top: 1rem;">Thank you for choosing Robbito for your tailor-made needs. We're honored to be part of your style journey.</p>
+      <p style="margin-top: 1rem;">Best regards,</p>
+      <p style="margin-top: 1rem;">Robbito Team</p>
+      <!-- Footer -->
+      <div class="footer" style="background: #111; color: #fff; margin-top: 3rem;  border-radius: .6rem; padding: .5rem .5rem;">
+        <p style="color: #fff;">This email was sent from Robbito. If you have received this email in error, please let us know.</p>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>
